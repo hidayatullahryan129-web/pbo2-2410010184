@@ -1,3 +1,4 @@
+[Deklarasi pengguna ai.txt](https://github.com/user-attachments/files/33606575/Deklarasi.pengguna.ai.txt)
 [p04_pbo2.txt](https://github.com/user-attachments/files/33602483/p04_pbo2.txt)Foto Sketsa:
 <img width="1600" height="1201" alt="Sketsa_pbo2" src="https://github.com/user-attachments/assets/75929a93-7794-4167-9538-488d1267bcbe" />
 Tabel Rancangan:
@@ -10,7 +11,9 @@ Navigator :
 <img width="289" height="387" alt="image" src="https://github.com/user-attachments/assets/2bf13576-623c-400c-bf67-b630de49f6a2" />
 <img width="263" height="95" alt="image" src="https://github.com/user-attachments/assets/07dee20c-45ba-4ff3-8ffa-2bc6863a0aff" />
 <img width="419" height="316" alt="image" src="https://github.com/user-attachments/assets/b7d68b1f-3e86-4bdd-9563-7518148abc61" />
+### Deklarasi Penggunaan AI
 
+Saya menggunakan ChatGPT untuk membantu memahami materi Layout Manager, mencari solusi ketika mengalami kesulitan saat membuat program di NetBeans, serta mempelajari cara memasukkan tugas ke GitHub. Dari bantuan tersebut, saya bisa lebih memahami langkah-langkah pengerjaan tugas. Saya tetap memeriksa dan mencoba kembali program yang dibuat agar sesuai dengan tugas yang diberikan dosen.
 
 
 [Ekperimen_p04 dan P02.md](https://github.com/user-attachments/files/33602305/Ekperimen_p04.dan.P02.md)
