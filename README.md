@@ -9,6 +9,8 @@ Ukuran Lebar :
 Navigator :
 <img width="289" height="387" alt="image" src="https://github.com/user-attachments/assets/2bf13576-623c-400c-bf67-b630de49f6a2" />
 <img width="263" height="95" alt="image" src="https://github.com/user-attachments/assets/07dee20c-45ba-4ff3-8ffa-2bc6863a0aff" />
+<img width="419" height="316" alt="image" src="https://github.com/user-attachments/assets/b7d68b1f-3e86-4bdd-9563-7518148abc61" />
+
 
 
 [Ekperimen_p04 dan P02.md](https://github.com/user-attachments/files/33602305/Ekperimen_p04.dan.P02.md)
