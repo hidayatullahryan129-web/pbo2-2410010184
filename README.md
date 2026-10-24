@@ -1,4 +1,4 @@
-#P04 Layout Manager
+[Eksperimen praktikum 3 Konveksi suhu.txt](https://github.com/user-attachments/files/33905140/Eksperimen.praktikum.3.Konveksi.suhu.txt)#P04 Layout Manager
 
 [Deklarasi pengguna ai.txt](https://github.com/user-attachments/files/33606575/Deklarasi.pengguna.ai.txt)
 [p04_pbo2.txt](https://github.com/user-attachments/files/33602483/p04_pbo2.txt)Foto Sketsa:
@@ -143,6 +143,72 @@ Konsisten dan mudah dibaca. Semua label ada di kolom kiri dan sejajar, semua kot
 Vertical Strut: dari Palette, buka kategori Swing Fillers, seret Vertical Strut ke antara dua tombol di BoxLayOut (lewat Navigator lebih mudah), lalu atur tingginya (misalnya 8). Strut ini adalah jarak tetap yang tidak ikut berubah saat jendela diubah ukurannya, jadi tombol tidak lagi menempel satu sama lain.
 
 #P05 Event Handling
+Arahkan kursor ke tombol, lalu jauhkan:
+<img width="313" height="228" alt="image" src="https://github.com/user-attachments/assets/68adbf2e-2e79-4d74-b8a8-14ea49c64866" />
+<img width="497" height="218" alt="image" src="https://github.com/user-attachments/assets/da8572a6-1e01-4295-ac54-c526e1a50c55" />
+Klik tombol Klik saya:
+<img width="485" height="212" alt="image" src="https://github.com/user-attachments/assets/b883a91f-1f78-42e5-a482-e974bc6b37a8" />
+Centang lalu hapus centang Aktifkan fitur:
+<img width="481" height="209" alt="image" src="https://github.com/user-attachments/assets/3b5da454-a69f-4ab1-ba83-3de0689a3ca0" />
+<img width="469" height="212" alt="image" src="https://github.com/user-attachments/assets/135b556b-45b3-48e9-a025-a8cd5a330ca9" />
+Ganti pilihan dari Pagi menjadi Malam:
+<img width="473" height="212" alt="image" src="https://github.com/user-attachments/assets/5bb29b40-ae86-42f9-a4c6-df04d2f8b057" />
+klik isian, lalu ketik “abc”:
+<img width="485" height="212" alt="image" src="https://github.com/user-attachments/assets/e2154cdc-ed5c-4c9c-aad7-88882792e8ad" />
+Tabel Pengamatan:
+<img width="440" height="329" alt="image" src="https://github.com/user-attachments/assets/4430663f-6b4d-435f-9f0f-ebfb6e3c6cb5" />
+
+Jawaban eksperimen Praktikum 3 dan Praktikum 4:
+Praktikum 3
+[Eksperimen 1: Menghapus pemeriksaan ItemEvent.SELECTED
+
+Pemeriksaan if (evt.getStateChange() == ItemEvent.SELECTED) dihapus, lalu ditambahkan System.out.println(“item berubah”); di dalam event handler satuanComboItemStateChanged. Setelah aplikasi dijalankan dan pilihan combo box diganti, pesan “item berubah” tercetak 2 kali setiap pilihan diganti.
+
+Penjelasan: event itemStateChanged pada Combo Box dipanggil dua kali setiap pilihan diganti, yaitu sekali untuk pilihan lama (DESELECTED) dan sekali untuk pilihan baru (SELECTED). Karena itu pemeriksaan ItemEvent.SELECTED diperlukan agar aksi hanya dijalankan satu kali.
+
+Eksperimen 2: Mengganti keyReleased dengan keyPressed
+
+Event keyReleased pada celsiusField dikosongkan, lalu dibuat event keyPressed yang memanggil konversi(). Hasil yang tampil terlambat satu karakter. Contohnya, saat pengguna mengetik 36, yang dikonversi baru angka 3.
+
+Penjelasan: event keyPressed dipicu saat tombol keyboard ditekan, yaitu sebelum karakter masuk ke dalam text field. Akibatnya, getText() di dalam method konversi() masih membaca teks lama. Sebaliknya, keyReleased dipicu saat tombol dilepas, ketika karakter sudah masuk ke text field, sehingga teks yang dibaca sudah yang terbaru.
+
+Eksperimen 3: Menghapus blok try dan catch
+
+Blok try dan catch pada method konversi() dihapus, lalu pada isian diketik huruf (misalnya “abc”). Di jendela Output muncul pesan error berupa stack trace berwarna merah, yaitu java.lang.NumberFormatException: For input string: “a”. Aplikasi tidak tertutup, tetapi label hasil tidak diperbarui.
+
+Penjelasan: method Double.parseDouble() melempar NumberFormatException ketika teks yang dimasukkan bukan angka. Tanpa try dan catch, pengecualian tersebut tidak ditangani sehingga hanya tercetak sebagai error di Output. Dengan try dan catch, pengguna mendapat pesan yang jelas, yaitu “Masukkan angka yang valid”. Hal ini menunjukkan pentingnya validasi input.Uploading Eksperimen praktikum 3 Konveksi suhu.txt…]()
+
+Praktikum 4
+[Praktikum 4 kalkulator sederhana.txt](https://github.com/user-attachments/files/33905202/Praktikum.4.kalkulator.sederhana.txt)
+
+1. Pesan “kali” tercetak 2 kali setiap tombol x diklik. Penyebabnya, kaliButton punya dua listener: satu dari event GUI Builder dan satu dari lambda di konstruktor, sehingga keduanya dijalankan. Satu tombol sebaiknya memakai satu cara saja agar aksi tidak berjalan ganda dan kode mudah dilacak.
+
+2. Di tab Design: tambah tombol baru bernama modulusButton dengan text %, lalu ubah Columns pada Grid Layout operatorPanel dari 4 menjadi 5. Di tab Source: isi handler tombol dengan hitung(‘%’), tambahkan case ‘%’ -> a % b; pada switch di method hitung, dan sertakan operator % pada pemeriksaan pembagi nol.
+
+3. Kursor langsung berada di isian pertama karena method hapus() diakhiri dengan angka1Field.requestFocusInWindow(), yang memindahkan fokus keyboard ke angka1Field.
+
+#Peta event pada README, tangkapan layar jendela Properties bagian Events untuk tombol Daftar, serta
+tangkapan layar dialog ringkasan dan dialog konfirmasi keluar.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4b2d9c22-a833-4b66-9093-6810dec7c798" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e555d76c-fcfa-4a53-a637-44e7713369ad" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4bd3b1e6-895d-46e0-b15f-6f65cd9565de" />
+
+#Deklarasi penggunaan AI: alat yang dipakai dan untuk keperluan apa, atau pernyataan tidak memakai AI.
+<img width="476" height="150" alt="image" src="https://github.com/user-attachments/assets/555d0ed5-4fee-4af1-a24d-c3def9812fda" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
