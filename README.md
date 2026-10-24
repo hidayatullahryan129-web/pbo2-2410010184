@@ -140,6 +140,9 @@ Konsisten dan mudah dibaca. Semua label ada di kolom kiri dan sejajar, semua kot
 
 Vertical Strut: dari Palette, buka kategori Swing Fillers, seret Vertical Strut ke antara dua tombol di BoxLayOut (lewat Navigator lebih mudah), lalu atur tingginya (misalnya 8). Strut ini adalah jarak tetap yang tidak ikut berubah saat jendela diubah ukurannya, jadi tombol tidak lagi menempel satu sama lain.
 
+#P05 Event Handling
+
+
 
 
 
